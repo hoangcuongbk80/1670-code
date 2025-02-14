@@ -1,0 +1,30 @@
+﻿@model IEnumerable<WebApplication2.Models.Job>
+
+@{
+    ViewData["Title"] = "Job Listings";
+}
+
+<h1>Job Listings</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Company</th>
+            <th>Location</th>
+            <th>Posted</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var job in Model)
+        {
+            <tr>
+                <td>@job.Title</td>
+                <td>@job.Company</td>
+                <td>@job.Location</td>
+                <td>@job.PostedDate.ToShortDateString()</td>
+                <td><a href="/Jobs/Details/@job.Id">Details</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
