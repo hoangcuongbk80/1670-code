@@ -18,5 +18,10 @@ namespace WebApplication2.Controllers
         {
             return View(jobs);
         }
+        public IActionResult Details(int id)
+        {
+            var job = jobs.Find(j => j.Id == id);
+            return View(job);
+        }
     }
 }

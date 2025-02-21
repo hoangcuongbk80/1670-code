@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\FGW\\Courses\\1670_ApplicationDevelopment\\Code\\WebApplication2\\WebApplication2.csproj": {}
+    "D:\\FGW\\Courses\\1670_ApplicationDevelopment\\Code\\1670-code\\WebApplication2\\WebApplication2.csproj": {}
   },
   "projects": {
-    "D:\\FGW\\Courses\\1670_ApplicationDevelopment\\Code\\WebApplication2\\WebApplication2.csproj": {
+    "D:\\FGW\\Courses\\1670_ApplicationDevelopment\\Code\\1670-code\\WebApplication2\\WebApplication2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\FGW\\Courses\\1670_ApplicationDevelopment\\Code\\WebApplication2\\WebApplication2.csproj",
+        "projectUniqueName": "D:\\FGW\\Courses\\1670_ApplicationDevelopment\\Code\\1670-code\\WebApplication2\\WebApplication2.csproj",
         "projectName": "WebApplication2",
-        "projectPath": "D:\\FGW\\Courses\\1670_ApplicationDevelopment\\Code\\WebApplication2\\WebApplication2.csproj",
+        "projectPath": "D:\\FGW\\Courses\\1670_ApplicationDevelopment\\Code\\1670-code\\WebApplication2\\WebApplication2.csproj",
         "packagesPath": "C:\\Users\\hoang\\.nuget\\packages\\",
-        "outputPath": "D:\\FGW\\Courses\\1670_ApplicationDevelopment\\Code\\WebApplication2\\obj\\",
+        "outputPath": "D:\\FGW\\Courses\\1670_ApplicationDevelopment\\Code\\1670-code\\WebApplication2\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\hoang\\AppData\\Roaming\\NuGet\\NuGet.Config",

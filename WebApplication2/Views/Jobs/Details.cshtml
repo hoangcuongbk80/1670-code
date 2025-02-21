@@ -1,0 +1,12 @@
+﻿@model WebApplication2.Models.Job
+
+@{
+    ViewData["Title"] = "Job Details";
+}
+
+<h1>@Model.Title</h1>
+<p><strong>Company:</strong> @Model.Company</p>
+<p><strong>Location:</strong> @Model.Location</p>
+<p><strong>Description:</strong> @Model.Description</p>
+
+<a href="/Jobs/Apply?jobId=@Model.Id" class="btn btn-primary">Apply Now</a>
