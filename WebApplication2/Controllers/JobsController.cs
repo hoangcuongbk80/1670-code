@@ -13,7 +13,6 @@ namespace WebApplication2.Controllers
             new Job { Id = 2, Title = "Data Analyst", Description = "Analyze business data", 
                       Company = "FPT", Location = "Da Nang", PostedDate = DateTime.Now }
         };
-
         public IActionResult Index()
         {
             return View(jobs);
@@ -22,6 +21,26 @@ namespace WebApplication2.Controllers
         {
             var job = jobs.Find(j => j.Id == id);
             return View(job);
+        }
+        
+        private static List<JobApplication> applications = new List<JobApplication>();
+        public IActionResult Apply(int jobId){
+            var job = jobs.Find(j => j.Id == jobId);
+            ViewBag.JobTitle = job?.Title;
+            return View(new JobApplication { JobId = jobId });
+        }
+        [HttpPost]
+        public IActionResult Apply(JobApplication application){
+            applications.Add(application);
+            return RedirectToAction("ThankYou");
+        }
+        public IActionResult ThankYou()
+        {
+            return View();
+        }
+        public IActionResult Applications()
+        {
+            return View(applications);
         }
     }
 }

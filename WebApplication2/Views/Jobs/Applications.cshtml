@@ -1,0 +1,28 @@
+﻿@model IEnumerable<WebApplication2.Models.JobApplication>
+
+@{
+    ViewData["Title"] = "Applications";
+}
+
+<h1>Submitted Applications</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Job ID</th>
+            <th>Applicant Name</th>
+            <th>Email</th>
+            <th>Resume</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var app in Model)
+        {
+            <tr>
+                <td>@app.JobId</td>
+                <td>@app.ApplicantName</td>
+                <td>@app.Email</td>
+                <td>@app.Resume</td>
+            </tr>
+        }
+    </tbody>
+</table>

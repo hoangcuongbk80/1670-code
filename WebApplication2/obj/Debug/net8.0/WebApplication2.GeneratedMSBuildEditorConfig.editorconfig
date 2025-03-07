@@ -26,12 +26,24 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/FGW/Courses/1670_ApplicationDevelopment/Code/1670-code/WebApplication2/Views/Jobs/Applications.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic1xBcHBsaWNhdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FGW/Courses/1670_ApplicationDevelopment/Code/1670-code/WebApplication2/Views/Jobs/Apply.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic1xBcHBseS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/FGW/Courses/1670_ApplicationDevelopment/Code/1670-code/WebApplication2/Views/Jobs/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic1xEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/FGW/Courses/1670_ApplicationDevelopment/Code/1670-code/WebApplication2/Views/Jobs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/FGW/Courses/1670_ApplicationDevelopment/Code/1670-code/WebApplication2/Views/Jobs/ThankYou.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSm9ic1xUaGFua1lvdS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/FGW/Courses/1670_ApplicationDevelopment/Code/1670-code/WebApplication2/Views/Shared/Error.cshtml]
