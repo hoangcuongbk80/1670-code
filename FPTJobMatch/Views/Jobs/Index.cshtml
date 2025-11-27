@@ -1,0 +1,70 @@
+﻿@model IEnumerable<FPTJobMatch.Models.Job>
+
+@{
+    ViewData["Title"] = "Job Listings";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h1>Job Listings</h1>
+    <a href="/Jobs/Create" class="btn btn-success">Post a New Job</a> <!-- Button to Create Job -->
+</div>
+
+<!-- Search Form -->
+<form method="get" class="mb-4">
+    <div class="row">
+        <div class="col-md-10">
+            <input type="text" name="searchTerm" value="@ViewBag.SearchTerm" class="form-control" placeholder="Search jobs by title or location" />
+        </div>
+        <div class="col-md-2">
+            <button type="submit" class="btn btn-primary w-100">Search</button>
+        </div>
+    </div>
+</form>
+
+<!-- Job List -->
+@if (!Model.Any())
+{
+    <div class="alert alert-warning text-center">
+        No jobs found. <a href="/Jobs/Create" class="alert-link">Post the first job!</a>
+    </div>
+}
+else
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Company</th>
+                <th>Location</th>
+                <th>Posted</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var job in Model)
+            {
+                <tr>
+                    <td>@job.Title</td>
+                    <td>@job.Company</td>
+                    <td>@job.Location</td>
+                    <td>@job.PostedDate.ToShortDateString()</td>
+                    <td>
+                        <a href="/Jobs/Details/@job.Id" class="btn btn-link">Details</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Pagination -->
+    <nav>
+        <ul class="pagination justify-content-center">
+            @for (int i = 1; i <= ViewBag.TotalPages; i++)
+            {
+                <li class="page-item @(ViewBag.CurrentPage == i ? "active" : "")">
+                    <a class="page-link" href="?searchTerm=@ViewBag.SearchTerm&page=@i">@i</a>
+                </li>
+            }
+        </ul>
+    </nav>
+}

@@ -1,0 +1,23 @@
+﻿@model FPTJobMatch.Models.JobApplication
+
+@{
+    ViewData["Title"] = "Apply for Job";
+}
+
+<h1>Apply for @ViewBag.JobTitle</h1>
+
+<form method="post">
+    <div class="mb-3">
+        <label asp-for="ApplicantName" class="form-label"></label>
+        <input asp-for="ApplicantName" class="form-control" required />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Email" class="form-label"></label>
+        <input asp-for="Email" class="form-control" type="email" required />
+    </div>
+    <div class="mb-3">
+        <label asp-for="Resume" class="form-label"></label>
+        <textarea asp-for="Resume" class="form-control" required></textarea>
+    </div>
+    <button type="submit" class="btn btn-success">Submit Application</button>
+</form>
